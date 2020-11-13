@@ -1,0 +1,27 @@
+<view class="wrap">
+    <!-- <cover-image
+        class="img_wrap transform:rotate({=i=}deg);"
+        src="../../images/frostmourne.png"
+        bindload="imageLoad"
+        binderror="imageError">
+    </cover-image>
+    <button plain="true" class="porinter_butn" bindtap="whirl">点击旋转{{i}}</button> -->
+
+    <view >
+        <view animation="{{animation}}">
+            <view class="porinter_butn">
+                <cover-image
+                    class="img_wrap"
+                    src="../../images/3.gif"
+                    bindload="imageLoad"
+                    binderror="imageError">
+                </cover-image>
+            </view>
+        </view>
+    </view>
+    <view class="card-area">
+        <!-- <view class="top-description border-bottom">展示动画</view> -->
+        <button plain="true" bindtap="rotate">点击旋转</button>
+        <view>手机放在人群中间，点击按钮开始转动，停下后枪头射中的人，接受真心话或大冒险惩罚</view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<!-- index.swan -->
+
+    <view class="pri-page">
+
+        <button plain="true" type="primary"  class="pri-page-select-zxh" bindtap="select_zxh"> 真心话 </button>
+        <button plain="true" type="primary" class="pri-page-select-dmx" bindtap="select_dmx"> 大冒险 </button>
+        <view id="context" class="context">{{text}}</view>
+
+        <button plain="true" type="primary" size="mini" class="change"  bindtap="change_text">换题</button>
+
+        <navigator target="self" open-type="navigate" url="../../pages/pointer/pointer" class="pointer">
+            <cover-image
+                class="cover_image"
+                src="../../images/pointer.png"
+                bindload="imageLoad"
+                binderror="imageError">
+            </cover-image>
+        </navigator>
+
+
+
+    </view>
+

@@ -1,0 +1,84 @@
+/**
+ * @file index.css
+ * @author swan
+ */
+ /*
+.logo {
+    width: 375rpx;
+    height: 60rpx;
+    background-image: url("../../images/smartapp.png");
+    background-size: 375rpx;
+}
+*/
+
+.pri-page {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pri-page-select-zxh {
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 1.5cm;
+    margin-left: 1.5cm;
+}
+.pri-page-select-dmx {
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: -1.35cm;
+    margin-right: 1.5cm;
+
+}
+.change{
+    font-size: 20px;
+    margin-top: 11cm;
+    margin-left: 3.5cm;
+    position: absolute;
+
+}
+
+.context{
+    margin-top: 3.5cm;
+    margin-left: 1.5cm;
+    align-content: center;
+
+}
+
+
+.userinfo-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.userinfo-avatar {
+    margin: 20rpx;
+    border-radius: 50%;
+    width: 88rpx;
+    height: 88rpx;
+}
+
+.userinfo-nickname {
+    display: block;
+    color: #aaa;
+    width: 150rpx;
+}
+.pointer{
+    /* font-size: 20px; */
+    margin-top: 10cm;
+    margin-left: 6.0cm;
+    position: absolute;
+}
+.cover_image {
+    width: 1.50cm;
+    height: 1.50cm;
+    margin: 25% 25%;
+}
+body{
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment:fixed;
+}
