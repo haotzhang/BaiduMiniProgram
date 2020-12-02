@@ -1,0 +1,39 @@
+<view class="container">
+    <!--to do-->
+    <view class="tip">tip:每提交一次代表一条录入,每种限加50条</view>
+    <view class="box">
+
+        <view class="word">真心话： <input value="{=zxh_text=}" class="input_box" bindinput="bindKeyInput_zxh" placeholder="在这里输入一条真心话"/></view><br>
+        <button plain="true" type="primary" class="submit_box" bindtap="submit_zhx" size="mini">提交</button>
+    <view/>
+
+
+    <view class="box">
+        <view class="word">大冒险：<input value="{=dmx_text=}" class="input_box" bindinput="bindKeyInput_dmx" placeholder="在这里输入一条大冒险"/></view><br>
+        <button plain="true" type="primary" class="submit_box" bindtap="submit_dmx" size="mini">提交</button>
+    </view>
+
+
+     <view class="list_title">真心话列表</view>
+    <view class="display_word">
+        <checkbox-group bindchange="checkboxChange_zxh">
+             <label class="" s-for="item in zxhitems">
+                <checkbox  class="sel_color" value="{{item.value}}" checked="{{item.checked}}">{{item.text}}</checkbox>
+            </label>
+        </checkbox-group>
+    </view>
+    <view class="list_title">大冒险列表</view>
+    <view class="display_word">
+         <checkbox-group bindchange="checkboxChange_dmx">
+             <label class="" s-for="item in dmxitems">
+                <checkbox value="{{item.value}}" checked="{{item.checked}}">{{item.text}}</checkbox>
+            </label>
+        </checkbox-group>
+    </view>
+
+    <button plain="true" class="delete" bindtap="delete" size="mini" type="primary">delete</button>
+
+
+
+
+<view/>

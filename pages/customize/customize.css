@@ -1,0 +1,70 @@
+body {
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+    margin-left:20rpx ;
+
+}
+.tip{
+    font-size: 80%;
+    margin-left: -48.309rpx;
+    color: rgba(100, 141, 228, 0.74)
+}
+.box{
+    overflow: hidden;
+    margin: .17rem .17rem 0 .17rem;
+    border-radius: 4.831rpx 4.831rpx;
+    border-color:rgba(100, 141, 228, 0.74);
+    background: rgba(255, 255, 255, 0.014);
+    padding-bottom: 0.5cm;
+
+
+}
+
+
+
+.word {
+    color:rgba(56, 107, 124, 0.966);
+    display: inline-block;
+    padding: .16rem .17rem;
+    font-family: PingFangSC-Medium;
+    justify-content: space-between;
+    padding-bottom: 0.1cm;
+
+}
+
+
+.input_box {
+    display: inline-block;
+    position: absolute;
+    color:rgba(248, 102, 5, 0.801);
+}
+
+.submit_box {
+
+    display: block;
+    width:520rpx;
+}
+.list_title{
+    color:rgba(56, 107, 124, 0.966);
+    margin-left: 180rpx;
+}
+
+
+
+.display_word{
+    overflow-y: scroll;
+    height:300rpx;
+    width:520rpx;
+    border-style: solid;
+    border-color:rgba(100, 141, 228, 0.74);
+    background-color: rgba(65, 158, 158, 0.356);
+}
+
+.delete{
+    margin-left: 180rpx;
+    margin-top: 10rpx;
+}

@@ -1,10 +1,13 @@
 {
     "pages": [
+
+        "pages/start/start",
         "pages/index/index",
-        "pages/pointer/pointer"
+        "pages/pointer/pointer",
+        "pages/customize/customize"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#ffeeee",
+        "navigationBarBackgroundColor": "#faf6de",
         "navigationBarTextStyle": "black",
         "navigationBarTitleText": "真心话大冒险",
         "backgroundTextStyle": "light"

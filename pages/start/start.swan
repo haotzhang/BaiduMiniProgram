@@ -1,0 +1,14 @@
+<view class="container">
+
+    <!-- <button type="primary" bindtap="rotate">rotate</button> -->
+    <!-- <image src="/images/zxhdmx.gif" bindtap="scale"></image> -->
+    <navigator target="self" open-type="navigate" url="../../pages/index/index">
+        <button bindtap="select_zxh" class="form-submit">
+                真心话
+        </button>
+        <button  bindtap="select_dmx" class="form-submit">
+                大冒险
+        </button>
+
+    </navigator>
+</view>

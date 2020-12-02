@@ -1,23 +1,39 @@
 <!-- index.swan -->
 
-    <view class="pri-page">
+<view class="pri-page">
 
-        <button plain="true" type="primary"  class="pri-page-select-zxh" bindtap="select_zxh"> 真心话 </button>
-        <button plain="true" type="primary" class="pri-page-select-dmx" bindtap="select_dmx"> 大冒险 </button>
-        <view id="context" class="context">{{text}}</view>
+        <view class="top">
+            <view class="img_wrap"><image src="../../images/zxh.png" ></image></view>
+            <button  class="pri-page-select-mild {{mild_isChecked==true?'is_Selected':''}}" bindtap="mild"> 轻度 </button>
+            <button class="pri-page-select-moderate {{moderate_isChecked==true?'is_Selected':''}}" bindtap="moderate"> 中度 </button>
+            <button class="pri-page-select-several {{several_isChecked==true?'is_Selected':''}}" bindtap="several"> 重度 </button>
+        </view>
+        <view id="context" class="context" >
+            <textarea
+                class="display_window"
+                value="{{text}}"
+                disabled>
 
-        <button plain="true" type="primary" size="mini" class="change"  bindtap="change_text">换题</button>
+            </textarea/>
+        </view>
+        <view class="background"  animation="{{animation}}"><image class="pic" src={{ul}} ></image></view>
 
-        <navigator target="self" open-type="navigate" url="../../pages/pointer/pointer" class="pointer">
-            <cover-image
-                class="cover_image"
-                src="../../images/pointer.png"
-                bindload="imageLoad"
-                binderror="imageError">
-            </cover-image>
+
+
+        <view class="bottom">
+
+        <navigator target="self" open-type="navigate" url="../../pages/pointer/pointer" >
+             <button size="mini" class="compass"  bindtap="compass">想要谁来做</button>
         </navigator>
 
+        <button size="mini" class="change"  bindtap="change_text" display="none">点击换一题</button>
+
+         <navigator target="self" open-type="navigate" url="../../pages/customize/customize">
+        <button size="mini" class="customize_text"  bindtap="customize_text">自定义题目</button>
+       </navigator>
+       <button size="mini"  class="customize_select" bindtap="customize_select">自定义换题</button>
+        </view>
 
 
-    </view>
+</view>
 

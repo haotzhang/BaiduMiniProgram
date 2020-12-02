@@ -1,49 +1,260 @@
-/**
- * @file index.css
- * @author swan
- */
- /*
-.logo {
-    width: 375rpx;
-    height: 60rpx;
-    background-image: url("../../images/smartapp.png");
-    background-size: 375rpx;
-}
-*/
 
 .pri-page {
     display: flex;
     flex-direction: column;
+    position:fixed;
+
+
+}
+.top{
+    display: flex;
+    height: 50px;
+    margin-top: 2cm;
+    text-align: center;
+    flex-wrap:wrap
+}
+/* 设置照片属性 */
+.img_wrap image{
+    width: 100%;
+        height: 100%;
+        /* display: block; */
+        margin: auto;
+}
+.img_wrap{
+    width: 400px;
+    height: 0px;
+    display: table-cell;
+    vertical-align: 0px;
+    text-align: center;
+
 
 }
 
-.pri-page-select-zxh {
+.pri-page-select-mild{
     font-size: 20px;
     font-family: cursive;
-    margin-top: 1.5cm;
-    margin-left: 1.5cm;
-}
-.pri-page-select-dmx {
-    font-size: 20px;
-    font-family: cursive;
-    margin-top: -1.35cm;
-    margin-right: 1.5cm;
+    margin-left:50rpx;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    /* border-radius: 25px; */
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 30px 8px 30px;
+    text-decoration: none;
+
 
 }
+.pri-page-select-moderate{
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:10rpx;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    /* border-radius: 25px; */
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 30px 8px 30px;
+    text-decoration: none;
+
+}
+.pri-page-select-several{
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:10rpx;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px,25px,25px,25px;
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 30px 8px 30px;
+    text-decoration: none;
+
+}
+
+
+
+.bottom{
+    display: flex;
+    height: 50px;
+    margin-top: 8.5cm;
+    text-align: center;
+}
+
 .change{
-    font-size: 20px;
-    margin-top: 11cm;
-    margin-left: 3.5cm;
+    font-size: 20rpx;
+    margin-left:180rpx;
+    position: fixed;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px,25px,25px,25px;
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 8px 20px;
+    text-decoration: none;
+}
+.compass{
+    font-size: 20rpx;
+    margin-left: 420rpx;
+    position: fixed;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px,25px,25px,25px;
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 8px 20px;
+    text-decoration: none;
+}
+.customize_text{
+    font-size: 20rpx;
+    margin-left:180rpx;
+    margin-top:100rpx;
+    position: fixed;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px,25px,25px,25px;
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 8px 20px;
+    text-decoration: none;
+}
+.customize_select{
+    font-size: 20rpx;
+    margin-left:420rpx;
+    margin-top: 100rpx;
+    position: fixed;
+
+    background: #1D4D7B;
+    background-image: -webkit-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -moz-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -ms-linear-gradient(top, #1D4D7B, #010305);
+    background-image: -o-linear-gradient(top, #1D4D7B, #010305);
+    background-image: linear-gradient(to bottom, #1D4D7B, #010305);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px,25px,25px,25px;
+    text-shadow: 0px 0px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 8px 20px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+.context{
+    z-index: 9999;
+    margin-top: 400rpx;
+    margin-left: 200rpx;
+    align-content: center;
+    width:350rpx;
+    position:absolute;
+
+}
+/* 显示内容的对话框 */
+.display_window {
+    /*background-color:#fff;*/
+    /* text-align:center; */
+    position: absolute;
+    display:block;
+    /* auto-height:true; */
+    width: 100%;
+    /* width: 300rpx; */
+    overflow: auto;
+    padding: 10px;
+    border-radius: 39.855rpx;
+    /* border: 20px #aaa; */
+    border-color: antiquewhite;
+
+
+
+}
+
+.background{
+    z-index: -1;
+    margin-top: 300rpx;
+    align-content: center;
+    height:7cm;
+    width:14cm;
+    position: absolute;
+
+}
+.pic{
+
+    margin-top: -20rpx;
+    margin-left: 90rpx;
+    align-content: center;
+    height:600rpx;
+    width:600rpx;
+
+    background-size:500rpx,700rpx;
+    background-position: center center;
+    background-repeat:no-repeat;
     position: absolute;
 
 }
 
-.context{
-    margin-top: 3.5cm;
-    margin-left: 1.5cm;
-    align-content: center;
 
-}
+
 
 
 .userinfo-message {
@@ -65,20 +276,25 @@
     color: #aaa;
     width: 150rpx;
 }
-.pointer{
-    /* font-size: 20px; */
-    margin-top: 10cm;
-    margin-left: 6.0cm;
-    position: absolute;
-}
-.cover_image {
-    width: 1.50cm;
-    height: 1.50cm;
-    margin: 25% 25%;
-}
 body{
-    background-image: url('../../images/background.png');
+    background-image: url('../../images/background.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment:fixed;
 }
+
+/* 按钮样式控制 */
+.is_Selected {
+    font-size: 20px;
+    font-family: cursive;
+    margin:auto;
+
+    /* height: 79.71rpx;
+    font-size: 32.609rpx; */
+    color: #fff;
+    /* background: linear-gradient(90deg, #EE4FA9 0%, #F6433E 100%); */
+    background: linear-gradient(135deg,#f86505 0%,#732801 100%);
+    /* border-radius: 39.855rpx; */
+    /* margin: 32.609rpx 0; */
+}
+

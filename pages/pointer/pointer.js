@@ -2,22 +2,21 @@ const app = getApp()
 Page({
     data: {
     },
-    onLoad: function () {
-        // 监听页面加载的生命周期函数
-        swan.setPageInfo({
-            title: 'XXXX',
-            keywords: 'XXXX',
-            description: 'XXXXX',
-            image: [
-                'XXXXX'
-            ]
-        })
-    },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
     },
     onShow: function() {
         // 监听页面显示的生命周期函数
+        swan.setPageInfo({
+            title: '小西的说真话和大冒险',
+            keywords: '百度，真心话，大冒险',
+            description: '朋友、亲友聚会玩儿的真心话大冒险游戏',
+            image: [
+                '../../images/3.gif',
+                '../../images/background.png'
+            ]
+        })
+
     },
     onHide: function() {
         // 监听页面隐藏的生命周期函数
@@ -55,7 +54,7 @@ Page({
         });
     },
     rotate() {
-        this.animation.rotate(Math.random() * 9000 - 360).step();
+        this.animation.rotate(Math.random() * 4500 - 360).step();
         this.setData({
             animation: this.animation.export()
         });

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "小西的说真话和大冒险",
+    "usingComponents": {
+        "smt-checkbox-group": "@smt-ui/component/src/checkbox-group"
+    }
+}
